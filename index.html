@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>jQuery Image Gallery</h1>
+      <p>jQuery (Selectors, Effects, Animations)</p>
+    </header>
+
+    <main>
+      <!--Part 1-->
+      <section id="part1">
+        <h2>Part 1: Selectors & CSS</h2>
+        <p id="sample-text">This text will be changed with jQuery!</p>
+        <button id="change-text">Change Text</button>
+      </section>
+
+      <!--Part 2: jQuery Effects-->
+      <section id="part2">
+        <h2>Part 2: jQuery Effects</h2>
+        <p class="effect-text">This paragraph will hide and show!</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <button id="toggle">Toggle</button>
+
+        <div class="fade-section">
+          <img id="fade-img" src="images/realm.jpg" alt="Gallery Image" />
+          <div class="fade-buttons">
+            <button id="fade-in">Fade In</button>
+            <button id="fade-out">Fade Out</button>
+            <button id="fade-toggle">Fade Toggle</button>
+          </div>
+        </div>
+
+        <div class="slide-panel">
+          <button id="slide-btn">Slide Toggle Panel</button>
+          <div id="panel">This is a sliding panel with jQuery!</div>
+        </div>
+      </section>
+
+      <!--Part 3-->
+      <section id="part3">
+        <h2>Part 3: DOM Manipulation</h2>
+        <ul id="item-list">
+          <li>Item 1</li>
+        </ul>
+        <button id="add-item">Add Item</button>
+        <button id="remove-item">Remove Item</button>
+
+        <div class="attr-section">
+          <img id="change-img" src="images/ron.jpg" alt="Switch Image" />
+          <br />
+          <button id="change-src">Change Image</button>
+          <button id="change-link">Change Link</button>
+          <a
+            id="dynamic-link"
+            href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo"
+            >Study more about Ronaldo</a
+          >
+        </div>
+
+        <div class="form-section">
+          <h3>Live Form Interaction</h3>
+          <form>
+            <input type="text" id="name" placeholder="Enter Name" />
+            <input type="email" id="email" placeholder="Enter Email" />
+          </form>
+          <p>Your name: <span id="display-name"></span></p>
+          <p>Your email: <span id="display-email"></span></p>
+        </div>
+      </section>
+
+      <!--Part 4-->
+      <section id="part4">
+        <h2>Part 4: Animations</h2>
+        <div id="box"></div>
+        <button id="animate">Basic Animation</button>
+        <button id="sequential">Sequential Animation</button>
+        <button id="combined">Combined Animation</button>
+      </section>
+
+      <!--Part 5-->
+      <section id="part5">
+        <h2>Part 5: Mini Project – jQuery Image Gallery</h2>
+        <div class="gallery">
+          <img class="thumb" src="images/real.jpg" alt="Gallery 1" />
+          <img class="thumb" src="images/ron.jpg" alt="Gallery 2" />
+          <img class="thumb" src="images/mu.jpg" alt="Gallery 3" />
+          <img class="thumb" src="images/madrid.jpg" alt="Gallery 4" />
+          <img class="thumb" src="images/vini.jpg" alt="Gallery 5" />
+        </div>
+
+        <div class="lightbox">
+          <span class="close">&times;</span>
+          <img id="lightbox-img" src="" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <p>
+            Created by <strong>Almat Muzdybay</strong> | Group:<strong
+              >SE-2439
+            </strong>
+          </p>
+        </div>
+
+        <div class="footer-copy">
+          <p>&copy; 2025 AITU | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
